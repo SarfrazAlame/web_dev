@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <CountContext.Provider value={count}>
-        <Count  setCount={setCount} />
+        <Count setCount={setCount} />
       </CountContext.Provider>
     </div>
   )
@@ -36,7 +36,7 @@ function CountRenderer() {
 function Buttons({ setCount }: { setCount: React.Dispatch<React.SetStateAction<number>> }) {
   const count = useContext(CountContext)
   return <div>
-    <button onClick={()=>setCount(count+1)}>incease</button>
+    <button onClick={() => setCount(count + 1)}>incease</button>
   </div>
 }
 
