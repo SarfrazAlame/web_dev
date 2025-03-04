@@ -1,6 +1,6 @@
 import mongoose, { Schema, model } from 'mongoose';
 
-const mongoUrl: string = 'mongodb://mongo:27017/myDatabase';
+const mongoUrl: string = 'mongodb://sarfrazcontainer:27017/myDatabase';
 
 // Connect to MongoDB
 mongoose.connect(mongoUrl)
@@ -22,4 +22,3 @@ const UserSchema: Schema = new Schema<IUser>({
 
 // Create a User model
 export const User = model<IUser>('User', UserSchema);
-
